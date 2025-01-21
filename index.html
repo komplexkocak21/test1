@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Audio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-title">
+            <img src="image/logo.png" alt="Logo" style="width: 100px; height: auto;">
+            <h1>Daftar Audio</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="cari-audio" onkeyup="cariAudio()" placeholder="Cari judul audio..." style="width: 200px;">
+        </div>
+    </div>
+
+    <div id="daftar-audio" class="audio-list">
+        <!-- Audio items will be dynamically generated here -->
+    </div>
+
+    <div class="login-container">
+        <input type="password" id="admin-password" placeholder="Admin Password">
+        <button onclick="loginAdmin()">Login</button>
+    </div>
+
+</body>
+</html>
